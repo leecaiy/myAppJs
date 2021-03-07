@@ -1,0 +1,22 @@
+{
+    "name": "小拓展Chrome",
+    "description" : "My first Chrome Extension,可以用来测试",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "png/你好雨石.png"
+     },
+      "background": {
+         "page":"html/page.html"
+      }, 
+     "content_scripts": [
+        {
+          "matches": ["http://*/*", "https://*/*"],
+          "js": ["test.js"]
+        }
+      ]
+    
+  }
+
+ 
