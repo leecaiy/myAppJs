@@ -1,0 +1,1 @@
+console.log(`Jquery ${$.fn.jquery}    import!`)
